@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #f4f7fb;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 40px;
+}
+
+.header {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge {
+    background-color: #e2e8f0;
+    color: #4a5568;
+    font-size: 0.75rem;
+    padding: 4px 8px;
+    border-radius: 12px;
+    font-weight: 500;
+}
+
+.main-container {
+    background: white;
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: #2d3748;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #718096;
+    font-size: 0.95rem;
+    margin-bottom: 24px;
+}
+
+.input-section {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 16px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    resize: none;
+    font-size: 1rem;
+    color: #4a5568;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+textarea:focus {
+    border-color: #3182ce;
+}
+
+.char-count {
+    position: absolute;
+    bottom: 12px;
+    right: 16px;
+    font-size: 0.8rem;
+    color: #a0aec0;
+}
+
+button {
+    background-color: #3182ce;
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2b6cb0;
+}
+
+button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+}
+
+.result-box {
+    margin-top: 24px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
+
+.result-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.result-header h2 {
+    font-size: 1.25rem;
+}
+
+/* Dynamic classes for results */
+.is-spam {
+    background-color: #fff5f5;
+    border: 1px solid #feb2b2;
+    color: #c53030;
+}
+
+.not-spam {
+    background-color: #f0fff4;
+    border: 1px solid #9ae6b4;
+    color: #2f855a;
+}
